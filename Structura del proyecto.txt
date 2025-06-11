@@ -1,0 +1,87 @@
+# Estructura del proyecto
+asecgc-app/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── firebase.js ..
+│   │   │   └── database.js ..
+│   │   ├── controllers/
+│   │   │   ├── authController.js ..
+│   │   │   ├── userController.js ..
+│   │   │   ├── workoutController.js ..
+│   │   │   └── analyticsController.js .. 
+│   │   ├── middleware/
+│   │   │   ├── auth.js ..
+│   │   │   └── validation.js ..
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   ├── Workout.js
+│   │   │   └── Exercise.js
+│   │   ├── routes/
+│   │   │   ├── auth.js
+│   │   │   ├── users.js
+│   │   │   ├── workouts.js
+│   │   │   └── analytics.js
+│   │   ├── services/
+│   │   │   ├── bodyFatCalculator.js
+│   │   │   ├── progressiveOverload.js
+│   │   │   └── oneRepMaxCalculator.js
+│   │   ├── utils/
+│   │   │   ├── validators.js
+│   │   │   └── helpers.js
+│   │   └── app.js
+│   ├── package.json
+│   └── .env
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   ├── Register.jsx
+│   │   │   │   └── ForgotPassword.jsx
+│   │   │   ├── dashboard/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── StatsCard.jsx
+│   │   │   │   └── ProgressChart.jsx
+│   │   │   ├── workout/
+│   │   │   │   ├── WorkoutForm.jsx
+│   │   │   │   ├── ExerciseList.jsx
+│   │   │   │   └── WorkoutSession.jsx
+│   │   │   ├── profile/
+│   │   │   │   ├── BodyMeasurements.jsx
+│   │   │   │   └── UserProfile.jsx
+│   │   │   ├── layout/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   └── Layout.jsx
+│   │   │   └── ui/
+│   │   │       ├── Button.jsx
+│   │   │       ├── Input.jsx
+│   │   │       └── Modal.jsx
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── AppContext.jsx
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   └── useFirestore.js
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── firebase.js
+│   │   ├── utils/
+│   │   │   ├── calculations.js
+│   │   │   └── constants.js
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Workouts.jsx
+│   │   │   └── Profile.jsx
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   └── index.css
+│   ├── package.json
+│   └── tailwind.config.js
+├── README.md
+└── .gitignore
